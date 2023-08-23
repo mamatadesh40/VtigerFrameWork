@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	
+   <test thread-count="5" parallel="classes" name="Test1">
+	
+	  <classes>
+		  <class name="OrganizationModule.FetchDataUsingExcelFile"></class>
+		  <class name="ProductModule.CreateProdUsingPropertiesFile"></class>
+		 
+	  </classes>
+	</test> <!-- Test -->  
+	  <test name="Test2">
+	  <classes>
+		  <class name="CampaignModule.CreateCampaignwithProduct"></class>
+		    <class name="CampaignModule.CreateCampaign"></class>	
+		  
+	 </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
